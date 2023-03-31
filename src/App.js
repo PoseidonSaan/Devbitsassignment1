@@ -9,6 +9,7 @@ import LoginPage from './components/LoginPage';
 import NavBar from './components/NavBar';
 import TopPage from './components/TopPage';
 import { Routes, Route, Router } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path = "/home" element = {<Home />} />
         <Route path = "/loginpage" element = {<LoginPage />} />
+        <Route path ="/dashboard" element = {<Dashboard />} />
       </Routes>
       {/* <TopPage />
       <NavBar /> 

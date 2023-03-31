@@ -17,11 +17,11 @@ const NavBar = () => {
 
       <ul className='hidden md:flex text-black'>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/home" alt="hehe" target={'_blank'}>About us</a></li>
+        hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/home" alt="hehe">About us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='https://as2.ftcdn.net/v2/jpg/00/74/15/95/1000_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg' alt="hehehe" target={'_blank'}>contact us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'>achievements</li>
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='/dashboard' alt="dashboard">Dashboard</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href = "/loginpage"> login</a> </li>
         <li className='px-4 cursor-pointer uppercase font-small
