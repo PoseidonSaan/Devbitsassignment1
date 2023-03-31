@@ -7,7 +7,7 @@ import { IoLocationSharp } from 'react-icons/io5'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const BottomPage = () => (
-    <div>
+    <div className=' mt-20'>
         <footer className="bg-[#242A36] text-white py-10">
             <div className="flex flex-wrap flex-col justify-center md:flex-row md:justify-between">
                 <div className="mx-4 mb-8 md:mb-0 flex flex-col items-center flex-1 w-full">
