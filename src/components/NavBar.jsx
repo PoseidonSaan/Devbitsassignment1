@@ -25,9 +25,11 @@ const NavBar = () => {
 
       <ul className='hidden md:flex text-black'>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/home" alt="hehe">About us</a></li>
+        hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/" alt="hehe">About us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='/dashboard' alt="dashboard">Dashboard</a></li>
+        <li className='px-4 cursor-pointer uppercase font-small
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='/investment' alt="dashboard">investments</a></li>
          {isAuthenticated ?(
       <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'>    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
