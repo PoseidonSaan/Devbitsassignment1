@@ -10,6 +10,21 @@ const Dashboard = () => {
 
     const [totalMoney, setTotalMoney] = useState(100);
 
+    const handleAddItem = () => {
+        const itemName = prompt("Enter item name:");
+        const itemPrice = Number(prompt("Enter item price:"));
+        if (itemName && itemPrice) {
+            const newId = Math.max(...items.map((item) => item.id)) + 1;
+            const newItem = {
+                id: newId,
+                name: itemName,
+                price: itemPrice,
+            };
+            setItems([...items, newItem]);
+            setTotalMoney(totalMoney - newItem.price);
+        }
+    };
+
     const [searchTerm, setSearchTerm] = useState("");
 
     const handleSearch = (event) => setSearchTerm(event.target.value);
@@ -20,19 +35,25 @@ const Dashboard = () => {
 
     return (
         <div
-          className="bg-cover bg-center h-screen"
-          style={{
-            background: "url('https://jooinn.com/images/water-sun-background-5.jpg') no-repeat center center fixed",
-            backgroundBlendMode: "overlay",
-            backgroundColor: "rgba(255, 255, 255, 0.5)",
-            backgroundSize: "cover",
-          }}
+            className="bg-cover bg-center h-screen"
+            style={{
+                background: "url('https://jooinn.com/images/water-sun-background-5.jpg') no-repeat center center fixed",
+                backgroundBlendMode: "overlay",
+                backgroundColor: "rgba(255, 255, 255, 0.5)",
+                backgroundSize: "cover",
+            }}
         >
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="bg-gray-200 shadow-md rounded-md overflow-hidden">
+                <div className="bg-white shadow-md rounded-md overflow-hidden">
                     <div className="flex justify-between px-4 py-2 border-b border-gray-200">
                         <h1 className="text-2xl font-bold">Total Money: ${totalMoney}</h1>
+                        <button
+                            className="bg-green-500 hover:bg-green-600 text-white rounded-md px-4 py-2"
+                            onClick={handleAddItem}
+                        >
+                            Add Item
+                        </button>
                         <input
                             type="text"
                             placeholder="Search..."
@@ -42,13 +63,13 @@ const Dashboard = () => {
                         />
                     </div>
                     <div className="flex flex-wrap p-4">
-                        {filteredItems.map((item) => (
+                        {items.map((item) => (
                             <div
                                 key={item.id}
-                                className="bg-white shadow-md p-4 rounded-md m-2 flex-1"
+                                className="bg-white shadow-md rounded-md p-4 m-2 flex-1"
                             >
                                 <h2 className="text-lg font-bold">{item.name}</h2>
-                                <p className="text-gray-600">${item.price}</p>
+                                <p className="text-gray-500">${item.price}</p>
                             </div>
                         ))}
                     </div>
