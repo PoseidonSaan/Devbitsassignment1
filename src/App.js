@@ -14,7 +14,7 @@ import { Routes, Route, Router } from 'react-router-dom';
 function App() {
   return (
     <div>
-
+      <NavBar></NavBar>
       <Routes>
         <Route path = "/home" element = {<Home />} />
         <Route path = "/loginpage" element = {<LoginPage />} />
@@ -28,6 +28,7 @@ function App() {
       <ConstitutionalLaw />
       <CriminalLaw />
       <BottomPage /> */}
+      <BottomPage></BottomPage>
     </div>
   );
 }

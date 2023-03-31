@@ -10,7 +10,7 @@ const BottomPage = () => (
         <footer className="bg-[#242A36] text-white py-10">
             <div className="flex flex-wrap flex-col justify-center md:flex-row md:justify-between">
                 <div className="mx-4 mb-8 md:mb-0 flex flex-col items-center flex-1 w-full">
-                    <img src={whitelogo} alt="Company Logo" className="h-20 w-auto mb-4" />
+                    <img src="https://www.logogarden.com/wp-content/uploads/2020/09/mortgage-broker-logo-2.png" alt="Company Logo" className="h-20 w-auto mb-4" />
                     <div className="max-w-xs text-left ">
                         <p className="text-m overflow-hidden text-gray-400 pb-4" style={{ textOverflow: 'ellipsis' }}>
                             Chambers of Jayant Bhatt caters to varied clients comprising of Governmental and Non-Governmental Bodies, Multinationals, Financial Institutions and individuals in an array of matters.

@@ -20,9 +20,7 @@ import BottomPage from './BottomPage';
 function Home() {
     return (
         <div>
-            <TopPage />
-            <NavBar />
-            
+
             <div className='w-100% h-fit   text-black px-20'>
                 <div className=' p-4 flex flex-col justify-left w-full h-full text-sm font-light mx-auto'>
                     <div className='pb-4'>
@@ -146,9 +144,6 @@ function Home() {
                 </div>
             </div>
 
-
-
-            <BottomPage />
         </div>
 
     );

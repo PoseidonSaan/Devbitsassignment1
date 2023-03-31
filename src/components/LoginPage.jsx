@@ -7,15 +7,14 @@ const LoginPage = () => {
   return (
     <div
       style={{
-        background: "url('https://as2.ftcdn.net/v2/jpg/03/73/16/85/1000_F_373168575_jg2k6kn0kfacCNOoU9vyExQ2Lf8DiQuH.jpg') no-repeat center center fixed",
+        background: "url('https://cdn.wallpapersafari.com/81/29/C6IYLW.jpg') no-repeat center center fixed",
         backgroundBlendMode: "overlay",
         backgroundColor: "rgba(255, 255, 255, 0.9)",
         backgroundSize: "cover",
       }}>
-      <TopPage />
-      <NavBar />
+
       <div className="flex items-center justify-center min-h-screen">
-        <div className="max-w-md w-full p-6 rounded-md shadow-md">
+        <div className="max-w-md w-full p-6 rounded-md shadow-md bg-gray-300 ">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Log In</h2>
           <form>
             <div className="mb-4">
@@ -33,7 +32,6 @@ const LoginPage = () => {
           </form>
         </div>
       </div>
-      <BottomPage />
     </div>
 
   );

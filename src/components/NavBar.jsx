@@ -11,17 +11,17 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-black">
-      <div className=' w-28'>
-        <img src="https://as1.ftcdn.net/v2/jpg/02/95/44/22/1000_F_295442295_OXsXOmLmqBUfZreTnGo9PREuAPSLQhff.jpg" alt="logo" className='cursor-pointer' />
+      <div className=' w-16'>
+        <img src="https://www.logogarden.com/wp-content/uploads/2020/09/mortgage-broker-logo-2.png" alt="logo" className='cursor-pointer' />
       </div>
 
       <ul className='hidden md:flex text-black'>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="https://as1.ftcdn.net/v2/jpg/03/15/66/92/1000_F_315669239_tvFWEffY96UtU2xT5uccdSlIJ2s0E9Ux.jpg" alt="hehe" target={'_blank'}>sex</a></li>
+        hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/home" alt="hehe" target={'_blank'}>About us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='https://as2.ftcdn.net/v2/jpg/00/74/15/95/1000_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg' alt="hehehe" target={'_blank'}>cam girls</a></li>
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='https://as2.ftcdn.net/v2/jpg/00/74/15/95/1000_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg' alt="hehehe" target={'_blank'}>contact us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'>LGBTQ+</li>
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'>achievements</li>
         <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href = "/loginpage"> login</a> </li>
         <li className='px-4 cursor-pointer uppercase font-small
