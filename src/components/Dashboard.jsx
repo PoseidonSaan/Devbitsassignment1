@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { HiArrowCircleRight } from "react-icons/hi";
 
 const Dashboard = () => {
     const [items, setItems] = useState([
@@ -8,7 +8,7 @@ const Dashboard = () => {
         { id: 3, name: "Item 3", price: 30 },
     ]);
 
-    const [totalMoney, setTotalMoney] = useState(100);
+    const [totalMoney, setTotalMoney] = useState(1000);
 
     const handleAddItem = () => {
         const itemName = prompt("Enter item name:");
@@ -37,19 +37,25 @@ const Dashboard = () => {
         <div
             className="bg-cover bg-center h-screen"
             style={{
-                background: "url('https://jooinn.com/images/water-sun-background-5.jpg') no-repeat center center fixed",
+                background:
+                    "url('https://jooinn.com/images/water-sun-background-5.jpg') no-repeat center center fixed",
                 backgroundBlendMode: "overlay",
                 backgroundColor: "rgba(255, 255, 255, 0.5)",
                 backgroundSize: "cover",
             }}
         >
-
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="bg-white shadow-md rounded-md overflow-hidden">
+                    <div className="flex justify-center px-4 py-2 bg-yellow-400 h-24 items-center">
+                        <h2 className=" text-4xl font-bold">Total Money </h2>
+                        <HiArrowCircleRight className="text-4xl mx-4" />
+                    
+                        <h2 className="text-4xl font-bold">  ${totalMoney}</h2>
+                    </div>
                     <div className="flex justify-between px-4 py-2 border-b border-gray-200">
-                        <h1 className="text-2xl font-bold">Total Money: ${totalMoney}</h1>
+                        <h1 className="text-2xl font-bold">Items</h1>
                         <button
-                            className="bg-green-500 hover:bg-green-600 text-white rounded-md px-4 py-2"
+                            className="bg-black hover:bg-yellow-400 text-white hover:text-black rounded-md px-4 py-2"
                             onClick={handleAddItem}
                         >
                             Add Item
@@ -63,7 +69,7 @@ const Dashboard = () => {
                         />
                     </div>
                     <div className="flex flex-wrap p-4">
-                        {items.map((item) => (
+                        {filteredItems.map((item) => (
                             <div
                                 key={item.id}
                                 className="bg-white shadow-md rounded-md p-4 m-2 flex-1"
@@ -73,6 +79,7 @@ const Dashboard = () => {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
         </div>

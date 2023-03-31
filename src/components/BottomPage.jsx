@@ -42,15 +42,14 @@ const BottomPage = () => (
                 </div>
                 <div className="mx-4 mb-8 md:mb-0 flex-1 w-full">
                     <h4 className="text-lg mb-4">Contact Us</h4>
-                    <div className="flex flex-col mb-4 md:mb-4">
-                        <BsFillTelephoneFill size={10} /> <a href="tel:+18002162020" className='hover:scale-105 duration-200 hover:text-yellow-400 font-bold '> 011-41324533 |  +91 8447185912</a>
+                    <div className="inline-flex items-center font-bold mb-4 md:px-3">
+                        <BsFillTelephoneFill className='mr-1' /> <a href="tel:1800-208-1234" className='hover:scale-105 duration-200 hover:text-yellow-400 font-bold '>1800-208-1234</a>
 
                     </div>
-                    <div className="flex flex-col mb-4 md:mb-4">
-                        <p className='hover:scale-105 duration-200 hover:text-yellow-400 font-bold'> <BsFillClockFill></BsFillClockFill>Mon - Sat: 10.00 am - 8.00 pm</p>
-                    </div>
-                    <div className="flex flex-col">
-                        <p className='hover:scale-105 duration-200 hover:text-yellow-400 font-bold'><IoLocationSharp></IoLocationSharp>A71, New Friends Colony, New Delhi – 110025</p>
+
+                    <div className="inline-flex items-center font-bold mb-4 md:px-3 ">
+                        <IoLocationSharp className='mr-1' />
+                        <p className='hover:scale-105 duration-200 hover:text-yellow-400 font-bold'>Welcome to cleveland</p>
                     </div>
                 </div>
                 <div className="mx-4 mb-8 md:mb-0 flex-1 w-full">

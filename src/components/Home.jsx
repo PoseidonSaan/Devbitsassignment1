@@ -20,7 +20,7 @@ import BottomPage from './BottomPage';
 function Home() {
     return (
         <div>
-            <div className='flex row'>
+            <div className='md:flex row '>
 
 
                 <div className='w-4/5 h-fit   text-black px-20'>
@@ -49,7 +49,7 @@ function Home() {
                     </div>
 
                 </div>
-                <div className='w-1/5 mr-6 mt-10'>
+                <div className='w-1/5 mr-6 mt-10  '>
                     <img
                         src="https://www.logogarden.com/wp-content/uploads/2020/09/mortgage-broker-logo-2.png"
                         alt="logo"
