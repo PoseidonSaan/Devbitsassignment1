@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import Logo from '../assets/plainlogo.png'
-import Whitelogo from '../assets/logo.png'
 
 
 const NavBar = () => {
@@ -10,21 +8,27 @@ const NavBar = () => {
 
 
   return (
+    
     <div className="flex justify-between items-center w-full h-20 px-4 text-black">
       <div className=' w-16'>
-        <img src="https://www.logogarden.com/wp-content/uploads/2020/09/mortgage-broker-logo-2.png" alt="logo" className='cursor-pointer' />
+        <a href='/home'>
+          <img src="https://www.logogarden.com/wp-content/uploads/2020/09/mortgage-broker-logo-2.png" alt="logo" className='cursor-pointer' />
+          </a>
       </div>
 
       <ul className='hidden md:flex text-black'>
         <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/home" alt="hehe">About us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='https://as2.ftcdn.net/v2/jpg/00/74/15/95/1000_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg' alt="hehehe" target={'_blank'}>contact us</a></li>
-        <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='/dashboard' alt="dashboard">Dashboard</a></li>
+         <li className='px-4 cursor-pointer uppercase font-small
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href="/loginpage"> login</a> </li>
+        
         <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href = "/loginpage"> login</a> </li>
-  
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='/investment'>Investments</a></li>
+       
+        
+
 
       </ul>
 
@@ -44,8 +48,8 @@ const NavBar = () => {
           <li className='px-20 py-2 cursor-pointer uppercase font-small
               hover:scale-105 duration-200 focus:text-yellow-400'><a href='/loginpage' alt="login">Login</a></li>
           <li className='px-20 py-2 cursor-pointer uppercase font-small
-             hover:scale-105 duration-200 focus:text-yellow-400'>contact us </li>
-  
+             hover:scale-105 duration-200 focus:text-yellow-400'><a href='/investment'>Investment</a> </li>
+
 
         </ul>
       )}

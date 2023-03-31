@@ -1,7 +1,5 @@
 import React from 'react';
-import BottomPage from './BottomPage';
-import NavBar from './NavBar';
-import TopPage from './TopPage';
+
 
 const LoginPage = () => {
   return (

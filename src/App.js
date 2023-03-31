@@ -1,15 +1,16 @@
 
 import BottomPage from './components/BottomPage';
-import BusinessLaw from './components/ContactUs';
-import CivilDispute from './components/CivilDispute';
-import ConstitutionalLaw from './components/ConstitutionalLaw';
-import CriminalLaw from './components/CriminalLaw';
+
 import Home from './components/Home';
 import LoginPage from './components/LoginPage';
 import NavBar from './components/NavBar';
-import TopPage from './components/TopPage';
-import { Routes, Route, Router } from 'react-router-dom';
+
+import { Routes, Route} from 'react-router-dom';
 import Dashboard from './components/Dashboard';
+import InvestmentInstruments from './components/InvestmentInstrument';
+import StocksPage from './components/StocksPage';
+import BondsPage from './components/BondsPage';
+import MutualFundsPage from './components/MutualFundsPage';
 
 
 function App() {
@@ -17,9 +18,14 @@ function App() {
     <div>
       <NavBar></NavBar>
       <Routes>
+        
         <Route path = "/home" element = {<Home />} />
         <Route path = "/loginpage" element = {<LoginPage />} />
         <Route path ="/dashboard" element = {<Dashboard />} />
+        <Route path ="/investment" element = {<InvestmentInstruments />} />
+        <Route path ="/stocks" element = {<StocksPage />} />
+        <Route path ="/bonds" element = {<BondsPage />} />
+        <Route path ="/mutual-funds" element = {<MutualFundsPage />} />
       </Routes>
       {/* <TopPage />
       <NavBar /> 
