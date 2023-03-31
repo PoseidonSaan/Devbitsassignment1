@@ -2,17 +2,7 @@
 
 import React from 'react';
 
-import { GiPistolGun } from 'react-icons/gi'
-import { GiHandcuffs } from 'react-icons/gi'
-import { MdOutlineFamilyRestroom } from 'react-icons/md'
-import { FaBalanceScale } from 'react-icons/fa'
-import { FaBriefcaseMedical } from 'react-icons/fa'
-import { FaHome } from 'react-icons/fa'
-import { FaBusinessTime } from 'react-icons/fa'
-import { RiTeamFill } from 'react-icons/ri'
-import TopPage from './TopPage';
-import NavBar from './NavBar';
-import BottomPage from './BottomPage';
+
 
 
 

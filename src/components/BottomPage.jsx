@@ -1,17 +1,20 @@
 import React from 'react'
-import whitelogo from '../assets/logo.png'
-import logo from '../assets/plainlogo.png'
+
 import { IoChevronForwardSharp } from 'react-icons/io5'
-import { BsFillTelephoneFill, BsFillClockFill } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { IoLocationSharp } from 'react-icons/io5'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
+
 const BottomPage = () => (
+
     <div className=' mt-20'>
         <footer className="bg-[#242A36] text-white py-10">
             <div className="flex flex-wrap flex-col justify-center md:flex-row md:justify-between">
                 <div className="mx-4 mb-8 md:mb-0 flex flex-col items-center flex-1 w-full">
+                    <a href="/home">
                     <img src="https://www.logogarden.com/wp-content/uploads/2020/09/mortgage-broker-logo-2.png" alt="Company Logo" className="h-20 w-auto mb-4" />
+                    </a>
                     <div className="max-w-xs text-left ">
                         <p className="text-m overflow-hidden text-gray-400 pb-4" style={{ textOverflow: 'ellipsis' }}>
                             We pride ourselves on our commitment to exceptional customer service. We understand that our clients trust us with their financial futures, and we take that responsibility seriously. Our team is available to answer questions, provide guidance, and offer support whenever our clients need us.
@@ -23,20 +26,21 @@ const BottomPage = () => (
                     <ul>
                         <li className="mb-2"><div className="inline-flex items-center font-bold">
                             <IoChevronForwardSharp className="mr-1" />
-                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer">About us</span>
+                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer"><a href='/home'>About us</a></span>
                         </div>
                         </li>
                         <li className="mb-2"><div className="inline-flex items-center font-bold">
                             <IoChevronForwardSharp className="mr-1" />
-                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer">contact us</span>
+                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer"><a href='/investment'>Investment</a></span>
                         </div></li>
-                        <li className="mb-2"><div className="inline-flex items-center font-bold">
+                       
+                        <li className="mb-2 text-sm"><div className="inline-flex items-center font-bold">
                             <IoChevronForwardSharp className="mr-1" />
-                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer">achievements</span>
+                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer"><a href='/loginpage'> Login</a></span>
                         </div></li>
                         <li className="mb-2 text-sm"><div className="inline-flex items-center font-bold">
                             <IoChevronForwardSharp className="mr-1" />
-                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer">login</span>
+                            <span className="text-sm font-bold uppercase hover:scale-105 duration-200 hover:text-yellow-400 cursor-pointer"><a href='/dashboard'> Dashboard</a></span>
                         </div></li>
                     </ul>
                 </div>

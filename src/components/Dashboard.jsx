@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { HiArrowCircleRight } from "react-icons/hi";
 
-const Dashboard = () => {
+
+export const Dashboard = () => {
     const [items, setItems] = useState([
         { id: 1, name: "Item 1", price: 10 },
         { id: 2, name: "Item 2", price: 20 },
@@ -35,14 +36,7 @@ const Dashboard = () => {
 
     return (
         <div
-            className="bg-cover bg-center h-screen"
-            style={{
-                background:
-                    "url('https://jooinn.com/images/water-sun-background-5.jpg') no-repeat center center fixed",
-                backgroundBlendMode: "overlay",
-                backgroundColor: "rgba(255, 255, 255, 0.5)",
-                backgroundSize: "cover",
-            }}
+            className="bg-cover bg-center h-screen bg-gradient-to-b from-yellow-400 to-yellow-200 "
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="bg-white shadow-md rounded-md overflow-hidden">
