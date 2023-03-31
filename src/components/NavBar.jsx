@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Logo from '../assets/plainlogo.png'
 import Whitelogo from '../assets/logo.png'
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 const NavBar = () => {
@@ -27,8 +28,20 @@ const NavBar = () => {
         hover:scale-105 duration-200 hover:text-yellow-400 focus:text-yellow-400'><a href="/home" alt="hehe">About us</a></li>
         <li className='px-4 cursor-pointer uppercase font-small
         hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href='/dashboard' alt="dashboard">Dashboard</a></li>
-        <li className='px-4 cursor-pointer uppercase font-small
-        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'><a href = "/loginpage"> login</a> </li>
+         {isAuthenticated ?(
+      <li className='px-4 cursor-pointer uppercase font-small
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'>    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+        Log Out
+      </button></li>
+
+    ):
+    (
+          <li className='px-4 cursor-pointer uppercase font-small
+        hover:scale-105 duration-200  hover:text-yellow-400 focus:text-yellow-400'>  <button onClick={() => loginWithRedirect()}>Log In</button></li>
+     
+    )}
+       
+        
   
 
       </ul>
